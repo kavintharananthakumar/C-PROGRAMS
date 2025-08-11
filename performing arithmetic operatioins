@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>  
+
+int main() {
+    float a, b;
+
+    printf("Enter a, b: ");
+    scanf("%f %f", &a, &b);  // Correct format for float input
+
+    float sum = a + b;
+    printf("Sum = %f\n", sum);
+
+    float dif = a - b;
+    printf("Difference = %f\n", dif);
+
+    float prod = a * b;
+    printf("Product = %f\n", prod);
+
+    if (b != 0) {
+        float div = a / b;
+        printf("Division = %f\n", div);
+
+        float mod = fmod(a, b);  // Floating-point modulus
+        printf("Modulus = %f\n", mod);
+    } else {
+        printf("Division and modulus by zero are undefined.\n");
+    }
+
+    return 0;
+}
