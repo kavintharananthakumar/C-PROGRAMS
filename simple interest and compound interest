@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    double p,n,r;
+
+    printf("Enter p, n,r: ");
+    scanf("%lf %lf %lf", &p, &n ,&r);
+    float si=(p*n*r)/100.0;
+    printf("simple interest%lf\n",si);
+    float ci=p*pow((1+(r/100.0)),n)-p;
+    printf("compound interest%lf\n",ci);
+    return 0;
+}
