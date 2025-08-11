@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter a, b, c: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Finding the greatest number
+    if (a > b && a > c) {
+        printf("The greatest number: %d\n", a);
+    } else if (b > c && b > a) {
+        printf("The greatest number: %d\n", b);
+    } else {
+        printf("The greatest number: %d\n", c);
+    }
+
+    // Finding the median
+    if ((a > b && a < c) || (a > c && a < b)) {
+        printf("The median: %d\n", a);
+    } else if ((b > a && b < c) || (b > c && b < a)) {
+        printf("The median: %d\n", b);
+    } else {
+        printf("The median: %d\n", c);
+    }
+
+    return 0;
+}
+  
