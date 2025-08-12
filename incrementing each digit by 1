@@ -1,0 +1,13 @@
+# include <stdio.h>
+int main()
+{
+int a;
+printf("enter a");
+scanf("%d",&a);
+int c=a%10;
+int b=a/10;
+c++;
+b++;
+int d=b*10+c;
+printf("%d",d);// a program to print a new number by adding one to each of its digits.
+}
