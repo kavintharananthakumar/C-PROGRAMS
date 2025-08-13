@@ -1,0 +1,55 @@
+#include <stdio.h>
+int main()
+{
+int a,nh,nf,nt,r;
+printf("enter amount");
+scanf("%d",&a);
+printf("enter number of hundreds");
+scanf("%d",&nh);
+printf("enter number of fifties");
+scanf("%d",&nf);
+printf("enter number of tens");
+scanf("%d",&nt);
+int h=a/100;
+if (h>nh)
+{
+    h=nh;
+    r=a-h*100;
+}
+else
+{
+ r=a-h*100;
+}
+int f=r/50;
+if (f>nf)
+{
+    f=nf;
+    r=r-f*50;
+}
+else
+{
+    r=r-f*50;
+}
+int t=r/10;
+if (t>nt)
+{
+    t=nt;
+    r=r-t*10;
+}
+else
+{
+    r=r-t*10;
+}
+if (r==0)
+{ 
+    printf("number of hundreds:%d\n",h);
+    printf("number of fifties:%d\n",f);
+    printf("number of tens:%d\n",t);
+}
+else
+{
+    printf("amount unavailable");
+}
+return 0;
+}
+    
