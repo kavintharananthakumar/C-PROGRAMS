@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+{
+int a;
+printf("enter amount");
+scanf("%d",&a);
+int h=a/100;
+int f=(a-(h*100))/50;
+int t=(a-(h*100+f*50))/10;
+printf("number of hundreds=%d\n",h);
+printf("number of fifties=%d\n",f);
+printf("number of tens=%d\n",t);
+}
