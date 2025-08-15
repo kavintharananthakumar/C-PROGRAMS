@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int AB,BC,AC;
+    printf("enter AB");
+    scanf("%d",&AB);
+    printf("enter BC");
+    scanf("%d",&BC);
+    printf("enter AC");
+    scanf("%d",&AC);
+   int a=AB*AB;
+   int b=BC*BC;
+   int c=AC*AC;
+if ((a+b)==c ||(b+c)==a||(c+a)==b)
+    {
+        printf("it is a right angled triangle");
+    }
+    else 
+    {
+        printf("it is not a right angled triangle");
+    }
+    return 0;
+}
