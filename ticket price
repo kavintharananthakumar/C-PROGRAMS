@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int age,day,cost,discount;
+    printf("enter age");
+    scanf("%d",&age);
+    printf("enter the day where  (1-7 where 1 stands for Sunday) ");
+    scanf("%d",&day);
+    if (day==4)
+        {
+            discount=20;
+        }
+    else
+        {
+            discount=0;
+        }
+    if (age<12)
+        { 
+            cost=100;
+            cost=cost-discount;
+            printf("the cost of a ticket is Rs.%d",cost);
+        }
+    else if(age>=12 && age<60)
+        { 
+            cost=150;
+            cost=cost-discount;
+            printf("the cost of a ticket is Rs.%d",cost);
+        }
+     else
+       { 
+            cost=120;
+            cost=cost-discount;
+            printf("the cost of a ticket is Rs.%d",cost);
+        }
+return 0;
+}
