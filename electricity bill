@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    float u,amount,charge=0;
+    printf("Enter the number of units consumed");
+    scanf("%f",&u);
+    if (u <= 50)
+    {
+    charge = u * 0.5;
+    }
+    if (u > 50 && u <= 150)
+    {
+        charge = 50 * 0.5 + (u - 50) * 0.75;
+    }
+    if (u > 150)
+    {
+    charge = 50 * 0.5 + 100 * 0.75 + (u - 150) * 1.20;
+    }
+    amount=charge+(charge*0.2);
+    printf("the total amount is %.2f",amount);
+    return 0;
+}
