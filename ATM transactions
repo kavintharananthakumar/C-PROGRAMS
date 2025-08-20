@@ -1,0 +1,35 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main()
+{
+int f,h;
+float w_amt,b_amt;
+printf("enter withdrawal amount");
+scanf("%f",&w_amt);
+printf("enter balance amount");
+scanf("%f",&b_amt);
+if ( (w_amt<=b_amt) && (b_amt>=1000))
+{
+    if ((int)w_amt%100==0)
+    {
+       f=w_amt/500;
+       h=(w_amt-f*500)/100;
+       printf("no. of five hundreds%d\n",f);
+       printf("no. of hundreds%d\n",h);
+    }
+}
+else if ((int)w_amt%100!=0)
+{
+printf("withdrawal amount is not in the multiples of 100s");
+}
+else if (b_amt<1000)
+{
+printf("insufficient balance");
+
+}
+else
+{
+printf("insufficient balance and also withdrawal amount is not in the multiples of 100s ");
+}
+return 0;
+}
