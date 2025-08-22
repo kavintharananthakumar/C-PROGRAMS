@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter a number:");
+    scanf("%d",&n);
+    if (n/10000!=0)
+    {
+        printf("the left most digit is:%d\n",n/10000 );
+        printf("the digit is ten thousands");
+
+    }
+    else if (n/1000!=0)
+    {
+        printf("the left most digit is:%d\n",n/1000 );
+        printf("the digit is thousands");
+
+    }
+    else if (n/100!=0)
+    {
+        printf("the left most digit is:%d\n",n/100 );
+        printf("the digit is hundreds");
+
+    }
+    else if (n/10!=0)
+    {
+        printf("the left most digit is:%d\n",n/10 );
+        printf("the digit is ten");
+
+    }
+    else if (n/1!=0)
+    {
+        printf("the left most digit is:%d\n",n/1);
+        printf("the digit is ones");
+
+    }
+    else
+    printf("invalid number of digits");
+    return 0;
+}
