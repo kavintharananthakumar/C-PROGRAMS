@@ -7,7 +7,7 @@ printf("enter withdrawal amount");
 scanf("%f",&w_amt);
 printf("enter balance amount");
 scanf("%f",&b_amt);
-if ( (w_amt<=b_amt) && (b_amt>=1000))
+if ( b_amt-w_amt>1000)
 {
     if ((int)w_amt%100==0)
     {
@@ -15,6 +15,7 @@ if ( (w_amt<=b_amt) && (b_amt>=1000))
        h=(w_amt-f*500)/100;
        printf("no. of five hundreds%d\n",f);
        printf("no. of hundreds%d\n",h);
+       b_amt=b_amt-w_amt;
     }
 }
 else if ((int)w_amt%100!=0)
