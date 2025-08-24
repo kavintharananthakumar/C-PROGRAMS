@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main()
+{
+int CLASS,sub_fail,grace;
+printf("enter the class and the no. of subjects failed");
+scanf("%d%d",&CLASS,&sub_fail);
+switch (CLASS)
+    {
+    case 1:
+        {
+        if (sub_fail<=3)
+            printf("the grace mark is:%d",sub_fail*5);
+        else
+            printf("no grace marks");
+        break;
+        }
+    case 2:
+        {
+        if (sub_fail<=2)
+            printf("the grace mark is:%d",sub_fail*4);
+        else
+            printf("no grace marks");
+        break;
+        }
+    case 3:
+        {
+        if (sub_fail==1)
+            printf("the grace mark is:%d",sub_fail*5);
+        else
+            printf("no grace marks");
+        break;
+        }
+    }
+}
