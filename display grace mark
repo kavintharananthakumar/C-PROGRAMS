@@ -10,25 +10,22 @@ switch (CLASS)
         {
         if (sub_fail<=3)
             printf("the grace mark is:%d",sub_fail*5);
-        else
-            printf("no grace marks");
-        break;
+            break;
         }
     case 2:
         {
         if (sub_fail<=2)
             printf("the grace mark is:%d",sub_fail*4);
-        else
-            printf("no grace marks");
         break;
         }
     case 3:
         {
         if (sub_fail==1)
             printf("the grace mark is:%d",sub_fail*5);
-        else
-            printf("no grace marks");
         break;
         }
+    default:
+            printf("no grace marks");
     }
 }
+
