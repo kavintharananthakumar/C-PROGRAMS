@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main() {
+   int choice,fizz_count=10,wafers_count=10,puffcorns_count=10,chips_count=10,oreo_count=10;
+   printf("menu:\n 1.fizz-10\n 2.wafers-10\n 3.puffcorns-10\n 4.chips-10\n 5.oreo-10\n");
+   printf("enter the serial number of your snack preference");
+   scanf("%d",&choice);
+   switch (choice)
+       {
+       case 1:
+           {
+               printf("bill: Rs.20");
+               fizz_count-=1;
+               break;
+           }
+       case 2:
+           {
+               printf("bill: Rs.15");
+               wafers_count-=1;
+               break;
+           }
+       case 3:
+           {
+               printf("bill: Rs.20");
+               puffcorns_count-=1;
+               break;
+           }
+       case 4:
+           {
+               printf("bill: Rs.10");
+               chips_count-=1;
+               break;
+           }
+       case 5:
+           {
+               printf("bill: Rs.10");
+               oreo_count-=1;
+               break;
+           }
+       default:
+            {
+                printf("invalid serial number");
+            }
+
+       }return 0;
+}
