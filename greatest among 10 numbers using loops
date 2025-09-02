@@ -1,0 +1,17 @@
+//get 10 numbers in a loop and find the greatest among them
+#include <stdio.h>
+void main()
+{
+int n,i=1,greatest=0;
+while (i<=10)
+    {
+        printf("enter the number");
+        scanf("%d",&n);
+        if (n>greatest)
+        {
+            greatest=n;
+        }
+        i++;
+    }
+printf("the greatest number is:%d",greatest);
+}
