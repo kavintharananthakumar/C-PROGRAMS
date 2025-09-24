@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    float bill;
+    scanf("%f",&bill);
+    int i_bill=(int)bill;
+    printf("The converted integer value is %d.",i_bill);
+    return 0;
+}
