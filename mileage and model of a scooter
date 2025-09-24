@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+    char model[250];
+    int mile;
+    scanf("%[^\n]",model);
+    scanf("%d",&mile);
+    printf("The scooter %s gives mileage of %d km/hr.",model,mile);
+    return 0;
+}
