@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[100];
+fgets(str,100,stdin);
+int len=strlen(str),start=0;
+for(int i=0;i<=len;i++)
+{
+if(str[i]==' ' || str[i]=='\0')
+{
+    for(int j=i-1;j>=start;j--){
+        putchar(str[j]);
+    }
+}
+if(str[i]==' ' ){
+    putchar(' ');
+    start=i+1;
+}
+}
+
+return 0;
+}
