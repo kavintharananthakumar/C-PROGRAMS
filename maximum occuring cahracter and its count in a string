@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[100],max;
+scanf("%s",str);
+int len=strlen(str),mc=0;
+for(int i=0;i<len;i++)
+{
+int c=1;
+for(int j=i+1;j<len;j++)
+{
+if(str[j]==str[i])
+c++;
+}
+if(mc<c)
+{
+mc=c;
+max=str[i];
+}
+}
+printf("the maximum occuring character '%c' is %d",max,mc);
+return 0;
+}
