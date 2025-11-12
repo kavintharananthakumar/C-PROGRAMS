@@ -1,0 +1,36 @@
+#include <stdio.h>
+struct fraction{
+float n;
+float d;
+}f1,f2;
+void add(struct fraction f1,struct fraction f2){
+printf("\nthe sum is: %.2f",(f1.n/f1.d)+(f2.n/f2.d));
+}
+void diff(struct fraction f1,struct fraction f2){
+printf("\nthe difference is: %.2f",(f1.n/f1.d)-(f2.n/f2.d));
+}
+void mul(struct fraction f1,struct fraction f2){
+printf("\nthe product is: %.2f",(f1.n/f1.d)*(f2.n/f2.d));
+}
+void divide(struct fraction f1,struct fraction f2){
+printf("\nthe quotient is: %.2f",(f1.n/f1.d)/(f2.n/f2.d));
+}
+void greatest(struct fraction f1,struct fraction f2){
+if((f1.n/f1.d)>(f2.n/f2.d))
+printf("\nthe greatest is %f/%f",f1.n,f1.d);
+else
+printf("\nthe greatest is %f/%f",f2.n,f2.d);
+}
+int main(){
+printf("\nenter numerator and denominator of fraction 1:");
+scanf("%f %f",&f1.n,&f1.d);
+printf("\nenter numerator and denominator of fraction 2:");
+scanf("%f %f",&f2.n,&f2.d);
+add(f1,f2);
+diff(f1,f2);
+mul(f1,f2);
+divide(f1,f2);
+greatest(f1,f2);
+return 0;
+}
+
