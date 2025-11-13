@@ -1,0 +1,22 @@
+//Create a structure called "Student" with members name, age, and total marks.
+//Write a C program to input data for two students, display their information, and find the average of total marks.
+#include <stdio.h>
+struct student
+{
+    char name[20];
+    int age;
+    float marks;
+}s1,s2;
+
+int main()
+{
+    printf("enter the data of the first student:");
+    scanf("%s %d %f",&s1.name,&s1.age,&s1.marks);
+    printf("enter the data of the second student:");
+    scanf("%s %d %f",&s2.name,&s2.age,&s2.marks);
+    printf("the data of the first student:%s %d %.2f",s1.name,s1.age,s1.marks);
+    printf("\nthe data of the second student:%s %d %.2f",s2.name,s2.age,s2.marks);
+    printf("the average is: %.2f",(s1.marks+s2.marks)/2.0);
+    return 0;
+}
+
