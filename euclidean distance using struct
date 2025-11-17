@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+struct pnt_sys{
+    int x;
+    int y;
+    int z;
+}p1,p2;
+float euclidean(struct pnt_sys a,struct pnt_sys b)
+{
+    float r=pow((b.x)-(a.x),2)+pow((b.y)-(a.y),2)+pow((b.z)-(a.z),2);
+    return sqrt(r);
+}
+
+int main()
+{
+    printf("enter the first points:");
+    scanf("%d %d %d",&p1.x,&p1.y,&p1.z);
+    printf("enter the second points:");
+    scanf("%d %d %d",&p2.x,&p2.y,&p2.z);
+    printf("%f",euclidean(p1,p2));
+    return 0;
+}
